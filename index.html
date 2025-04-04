@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP Business Campus Webinar | October 10, 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #009de0 0%, #0b56a4 100%);
+        }
+        .speaker-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(11, 86, 164, 0.2);
+        }
+        .countdown-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg" alt="SAP Logo" class="h-10">
+                    <span class="ml-3 text-xl font-bold">Business Campus</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-blue-200 transition">About</a>
+                    <a href="#speakers" class="hover:text-blue-200 transition">Speakers</a>
+                    <a href="#agenda" class="hover:text-blue-200 transition">Agenda</a>
+                    <a href="#register" class="bg-white text-blue-800 px-4 py-2 rounded-full font-medium hover:bg-blue-100 transition">Register Now</a>
+                </nav>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <span class="bg-white text-blue-800 px-4 py-1 rounded-full text-sm font-semibold mb-4 inline-block">WEBINAR</span>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Transforming Business with SAP Solutions</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Join industry leaders on October 10, 2025 for an exclusive deep dive into SAP Business Campus innovations</p>
+                
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+                    <div class="flex items-center">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>October 10, 2025</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>10:00 AM - 2:00 PM EST</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-globe mr-2"></i>
+                        <span>Virtual Event</span>
+                    </div>
+                </div>
+                
+                <!-- Countdown Timer -->
+                <div class="max-w-2xl mx-auto mb-12">
+                    <h3 class="text-xl font-semibold mb-4">Event Starts In:</h3>
+                    <div class="grid grid-cols-4 gap-4 text-center">
+                        <div class="countdown-box rounded-lg py-4">
+                            <div class="text-3xl font-bold" id="days">00</div>
+                            <div class="text-sm">Days</div>
+                        </div>
+                        <div class="countdown-box rounded-lg py-4">
+                            <div class="text-3xl font-bold" id="hours">00</div>
+                            <div class="text-sm">Hours</div>
+                        </div>
+                        <div class="countdown-box rounded-lg py-4">
+                            <div class="text-3xl font-bold" id="minutes">00</div>
+                            <div class="text-sm">Minutes</div>
+                        </div>
+                        <div class="countdown-box rounded-lg py-4">
+                            <div class="text-3xl font-bold" id="seconds">00</div>
+                            <div class="text-sm">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="bg-white text-blue-800 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-100 transition transform hover:scale-105 pulse-animation">
+                    <i class="fas fa-user-plus mr-2"></i> Register Now - Limited Seats!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About The Webinar</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 mb-8">
+                    This exclusive webinar will explore the latest innovations in SAP Business Campus solutions, designed to transform how enterprises manage their operations, data, and customer experiences.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-8 rounded-xl">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Business Growth</h3>
+                    <p class="text-gray-600">Learn how SAP solutions can drive revenue growth and operational efficiency across your organization.</p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-xl">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Digital Transformation</h3>
+                    <p class="text-gray-600">Discover strategies for implementing SAP technologies to modernize your business infrastructure.</p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-xl">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Customer Success</h3>
+                    <p class="text-gray-600">Hear real-world case studies from companies that have successfully implemented SAP Business Campus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Featured Speakers</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 mb-8">
+                    Learn from industry leaders and SAP experts who are shaping the future of enterprise technology.
+                </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Speaker 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden speaker-card transition duration-300">
+                    <div class="h-64 bg-blue-100 flex items-center justify-center">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Speaker" class="h-48 w-48 rounded-full object-cover border-4 border-white shadow">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Dr. Sarah Chen</h3>
+                        <p class="text-blue-600 font-medium mb-2">Chief Digital Officer, TechNova</p>
+                        <p class="text-gray-600 text-sm">Former SAP Product Lead with 15+ years experience in enterprise solutions.</p>
+                    </div>
+                </div>
+                
+                <!-- Speaker 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden speaker-card transition duration-300">
+                    <div class="h-64 bg-blue-100 flex items-center justify-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Speaker" class="h-48 w-48 rounded-full object-cover border-4 border-white shadow">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Michael Rodriguez</h3>
+                        <p class="text-blue-600 font-medium mb-2">SVP, Global SAP Solutions</p>
+                        <p class="text-gray-600 text-sm">Architect of award-winning SAP implementations for Fortune 500 companies.</p>
+                    </div>
+                </div>
+                
+                <!-- Speaker 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden speaker-card transition duration-300">
+                    <div class="h-64 bg-blue-100 flex items-center justify-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Speaker" class="h-48 w-48 rounded-full object-cover border-4 border-white shadow">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">Priya Patel</h3>
+                        <p class="text-blue-600 font-medium mb-2">Director, SAP Innovation Labs</p>
+                        <p class="text-gray-600 text-sm">Leading researcher in AI-powered SAP analytics and automation.</p>
+                    </div>
+                </div>
+                
+                <!-- Speaker 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden speaker-card transition duration-300">
+                    <div class="h-64 bg-blue-100 flex items-center justify-center">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Speaker" class="h-48 w-48 rounded-full object-cover border-4 border-white shadow">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800">David Kim</h3>
+                        <p class="text-blue-600 font-medium mb-2">CEO, EnterpriseBridge</p>
+                        <p class="text-gray-600 text-sm">SAP implementation specialist with focus on mid-market transformation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agenda Section -->
+    <section id="agenda" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Event Agenda</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 mb-8">
+                    A carefully curated program designed to deliver maximum value in just 4 hours.
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-8">
+                    <!-- Agenda Item 1 -->
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 mr-4">
+                            <span class="font-bold">10:00</span>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-lg flex-grow">
+                            <h3 class="font-bold text-gray-800 mb-2">Opening Keynote</h3>
+                            <p class="text-gray-600">The Future of Enterprise Technology with SAP Business Campus</p>
+                            <p class="text-blue-600 text-sm mt-2"><i class="fas fa-user mr-1"></i> Dr. Sarah Chen</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Agenda Item 2 -->
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 mr-4">
+                            <span class="font-bold">10:45</span>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-lg flex-grow">
+                            <h3 class="font-bold text-gray-800 mb-2">Deep Dive Session</h3>
+                            <p class="text-gray-600">Implementing SAP S/4HANA: Best Practices and Pitfalls to Avoid</p>
+                            <p class="text-blue-600 text-sm mt-2"><i class="fas fa-user mr-1"></i> Michael Rodriguez</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Agenda Item 3 -->
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 mr-4">
+                            <span class="font-bold">11:30</span>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-lg flex-grow">
+                            <h3 class="font-bold text-gray-800 mb-2">Panel Discussion</h3>
+                            <p class="text-gray-600">Digital Transformation in Action: SAP Success Stories</p>
+                            <p class="text-blue-600 text-sm mt-2"><i class="fas fa-users mr-1"></i> All Speakers</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Agenda Item 4 -->
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 mr-4">
+                            <span class="font-bold">12:15</span>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-lg flex-grow">
+                            <h3 class="font-bold text-gray-800 mb-2">Networking Break</h3>
+                            <p class="text-gray-600">Connect with peers and speakers in virtual breakout rooms</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Agenda Item 5 -->
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 mr-4">
+                            <span class="font-bold">12:45</span>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-lg flex-grow">
+                            <h3 class="font-bold text-gray-800 mb-2">Workshop</h3>
+                            <p class="text-gray-600">Hands-on with SAP Business Technology Platform</p>
+                            <p class="text-blue-600 text-sm mt-2"><i class="fas fa-user mr-1"></i> Priya Patel</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Agenda Item 6 -->
+                    <div class="flex items-start">
+                        <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 mr-4">
+                            <span class="font-bold">13:30</span>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-lg flex-grow">
+                            <h3 class="font-bold text-gray-800 mb-2">Closing Session</h3>
+                            <p class="text-gray-600">Roadmap for SAP Innovation: What's Coming Next</p>
+                            <p class="text-blue-600 text-sm mt-2"><i class="fas fa-user mr-1"></i> David Kim</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Register Now</h2>
+                    <div class="w-24 h-1 bg-white mx-auto mb-8"></div>
+                    <p class="text-xl mb-8">
+                        Secure your spot today for this exclusive SAP Business Campus webinar. Limited seats available!
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden max-w-2xl mx-auto">
+                    <div class="p-8 text-gray-800">
+                        <h3 class="text-2xl font-bold mb-6">Registration Form</h3>
+                        
+                        <form>
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label class="block text-gray-700 font-medium mb-2">First Name</label>
+                                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 font-medium mb-2">Last Name</label>
+                                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-medium mb-2">Company</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-medium mb-2">Job Title</label>
+                                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-medium mb-2">How did you hear about this event?</label>
+                                <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <option>Select an option</option>
+                                    <option>Email Newsletter</option>
+                                    <option>Social Media</option>
+                                    <option>Colleague Referral</option>
+                                    <option>SAP Website</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="flex items-center mb-6">
+                                <input type="checkbox" id="terms" class="mr-2">
+                                <label for="terms" class="text-gray-700">I agree to receive communications about this event and future SAP updates</label>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                                Complete Registration
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="w-full text-left p-6 focus:outline-none flex justify-between items-center">
+                            <span class="font-semibold text-gray-800">Is this webinar free to attend?</span>
+                            <i class="fas fa-chevron-down text-blue-600"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">Yes, this is a completely free educational event. There is no cost to attend, but registration is required as we have limited virtual seats available.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="w-full text-left p-6 focus:outline-none flex justify-between items-center">
+                            <span class="font-semibold text-gray-800">What do I need to participate?</span>
+                            <i class="fas fa-chevron-down text-blue-600"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">You'll need a computer or mobile device with internet access. Prior to the event, all registered attendees will receive a link to join the virtual platform along with instructions.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="w-full text-left p-6 focus:outline-none flex justify-between items-center">
+                            <span class="font-semibold text-gray-800">Will the sessions be recorded?</span>
+                            <i class="fas fa-chevron-down text-blue-600"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">Yes, all sessions will be recorded and made available to registered attendees for 30 days after the event. You'll receive access to these recordings via email.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="w-full text-left p-6 focus:outline-none flex justify-between items-center">
+                            <span class="font-semibold text-gray-800">Is this webinar suitable for beginners?</span>
+                            <i class="fas fa-chevron-down text-blue-600"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">Absolutely! While some sessions will dive into technical details, we've designed the agenda to provide value to all levels - from SAP beginners to experienced professionals.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="w-full text-left p-6 focus:outline-none flex justify-between items-center">
+                            <span class="font-semibold text-gray-800">Can I ask questions during the webinar?</span>
+                            <i class="fas fa-chevron-down text-blue-600"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden">
+                            <p class="text-gray-600">Yes! We'll have dedicated Q&A sessions after each presentation, and there will be a live chat function where you can submit questions throughout the event.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg" alt="SAP Logo" class="h-8 mb-4">
+                    <p class="text-gray-400 text-sm">SAP Business Campus webinar - October 10, 2025</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About SAP</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Business Campus</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">SAP Events</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">SAP Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Case Studies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">White Papers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                    <p class="text-gray-400 text-sm">© 2025 SAP SE. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const eventDate = new Date("October 10, 2025 10:00:00").getTime();
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById("days").innerHTML = days.toString().padStart(2, "0");
+            document.getElementById("hours").innerHTML = hours.toString().padStart(2, "0");
+            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, "0");
+            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, "0");
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // FAQ Accordion
+        document.querySelectorAll('#faq button').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentNode;
+                const content = button.nextElementSibling;
+                
+                // Close all other items
+                document.querySelectorAll('#faq .hidden').forEach(item => {
+                    if (item !== content) {
+                        item.classList.add('hidden');
+                        item.previousElementSibling.querySelector('i').classList.remove('fa-chevron-up');
+                        item.previousElementSibling.querySelector('i').classList.add('fa-chevron-down');
+                    }
+                });
+                
+                // Toggle current item
+                content.classList.toggle('hidden');
+                const icon = button.querySelector('i');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
